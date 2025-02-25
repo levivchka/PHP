@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab1</title>
+    <title>Hw1</title>
     <link rel="stylesheet" href="style.css">
     <style>
         header {
@@ -21,19 +21,18 @@
 <body>
     <header>
         <img src="Mospolytech.jpg" alt="logo" width='250px' height='70px'>
-    <h1 class="title">Домашняя работа: Hello, World!</h1> 
+        <h1 class="title">Домашняя работа: Hello, World!</h1> 
     </header>
     <main>
-        <h2>
-            <?php
-            echo "<h1>Hello, world!</h1>";
-            ?>
-        </h2>
+        <!--выводим текст через PHP -->
+        <?php
+            echo "Hello, world!";
+        ?>
     </main>
     <footer>
         <h2>Задание для самостоятельной работы</h2> 
-            <br/> 
-        <h2> Пестова Виктория 241-321 </h2>
+        <br/> 
+        <h2>Пестова Виктория 241-321</h2>
     </footer>
 </body>
 </html>
