@@ -1,42 +1,60 @@
-//switch — выполняет нужную операцию, чтобы найти X, в зависимости от знака (+, -, *, /)
-//explode - разделяет строчку на части
+//1
+<?php
+echo 'Задание 1<br>';
+$a = 27;
+$b = 12;
 
-//  x * 7 = 49
+// Вычисляем гипотенузу
+$c = sqrt($a ** 2 + $b ** 2);
 
-<?php 
-function solveEquation($equation) {
-    $parts = explode(' ', $equation);
-    $left = $parts[0];
-    $operator =$parts[1];
-    $right = $parts[2];
-    $result = $parts[4];
+// Округляем до двух знаков после запятой
+$c = round($c, 2);
 
-    // Приводим к числам, если это не 'x'
-    $left = ($left === 'x') ? 'x' : (float)$left;
-    $right = ($right === 'x') ? 'x' : (float)$right;
-    $result = (float)$result;
-    
-  echo "DEBUG: left=$left, operator=$operator, right=$right, result=$result<br>";
+// Выводим результат
+echo "Гипотенуза: $c";
 
-    if ($left === 'x') {
-        switch ($operator) {  
-            case '+' : $x = $result - $right; break;
-            case '-' : $x = $right + $result; break;
-            case '*' : $x = $result / $right; break;
-            case '/' : $x = $right * $result; break;
-        }
-    } elseif ($right === 'x') {
-        switch ($operator) {
-            case '+' : $x = $result - $left; break;
-            case '-' : $x = $left - $result; break;
-            case '*' : $x = $result / $left; break;
-            case '/' : $x = $left / $result; break;
-        }
-    }
+$a = 27;
+$b = 12;
+$c = sqrt($a ** 2 + $b ** 2);
+$c = round($c, 2);
+echo "Гипотенуза: $c";
 
-    return $x;
-}
 
-$equation = "x * 7 = 49";
-echo "x = " . solveEquation($equation);
-?>
+ //5
+ echo 'Задание 5<br>';
+$a = 2;
+$b = 2.0;
+$c = '2';
+$d = 'two';
+$g = true;
+$f = false;
+
+echo $a . $c . "<br>"; 
+echo $c . $a . "<br>"; 
+echo $d . $a . "<br>"; 
+echo $g . $d . "<br>"; 
+echo $f . $d . "<br>"; 
+echo $a . $g . "<br>"; 
+echo $b . $d . "<br>"; 
+echo $d . $f . "<br>"; 
+echo $c . $d . "<br>"; 
+echo $d . $c . "<br>";
+echo $g . $f . "<br>"; 
+
+
+ //14
+ echo 'Задание 14<br>';
+ $quiter = 'Тише';
+ $go = 'едешь';
+ $further = 'дальше';
+ echo $quiter . " " . $go . " - " . $further . " будешь.<br><br>";
+
+ //23
+ echo 'Задание 23<br>';
+ $a=7;
+ $b=4;
+ $c=' воробья';
+ $v=$a-$b;
+ echo $v . $c . "<br><br>";
+
+ ?>
