@@ -23,4 +23,25 @@
      echo "c = $c<BR>";
      echo "e = $e<BR>";
      echo 'floor: $c = '.floor($c).', $e = '.floor($e).'<BR>';
-     
+
+     //классы
+
+     class Cat{
+        public $name;
+        public $color;
+        public $weight;
+
+        public function sayMau(){
+            return 'Mau. I`m '.$this->name;
+        }
+     }
+
+     $cat1 = new Cat;
+     $cat1->name ='Murka'; //обратились к свойству 
+    echo $cat1->sayMau();
+    echo 'BR';
+    var_dump($cat1);
+
+
+     //регулярные выражения
+
