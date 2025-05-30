@@ -31,6 +31,7 @@
         </script>
 </head>
 <body>
+    <h1>Калькулятор</h1>
     <div class="calculator">
         <input type="text" class="input" id="display" readonly>
         <div class="buttons__wrapper"> 
